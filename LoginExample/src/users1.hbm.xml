@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="ExamplePackage">
+
+	 <class name="UserBean" table="users">
+	  <meta attribute="description">This class is used to save the info about users</meta>
+	  <id column="username" name="username" type="string"/>
+	  <property column="firstname" name="FirstName" type="string"/>
+	  <property column="lastname"  name="LastName" type="string"/>
+	  <property column="password" name="password" type="string"/>
+ </class>
+
+</hibernate-mapping>
